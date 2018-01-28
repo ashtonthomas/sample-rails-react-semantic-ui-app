@@ -1,6 +1,12 @@
-# Rails 5.2 with React/Webpack and the semantic-ui full style package
+# Rails 5.2, Webpack, React, semantic-ui
 
 _Note: all of these steps where committed individual so feel free to look at the individual changesets for more details_ [see commit history](https://github.com/ashtonthomas/sample-rails-react-semantic-ui-app/commits/master)
+
+Rails 5.1 and 5.2 have some new support for webpack and react but I had some trouble getting it all working correctly. I had especially a hard time getting the semantic-ui styling working (where I could edit the themes and recompile). This repo along with the commit log and this README detail my learnings.
+
+Resources:
+- https://github.com/rails/webpacker
+- https://react.semantic-ui.com/usage
 
 ## Some setup:
 
@@ -154,10 +160,6 @@ now set autoInstall to true and re-run yarn
 yarn add semantic-ui --dev
 ```
 
-I'm not sure, but you may want to add dist/ to .gitignore
-This may require others to run gulp build for the semantic ui assets
-but may keep commits cleaner in the future (I dunno?)
-
 Now, import css in your component: app/jacascript/packs/hello_react.jsx
 
 ```
@@ -208,3 +210,5 @@ git push heroku master
 
 heroku open
 ```
+
+[See Commit for commenting out ERB](https://github.com/ashtonthomas/sample-rails-react-semantic-ui-app/commit/c6ad27927f056e656917a6d4fc2d7a0999c445c6)
