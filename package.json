@@ -10,6 +10,7 @@
     "semantic-ui-react": "^0.77.2"
   },
   "devDependencies": {
+    "semantic-ui": "^2.2.13",
     "webpack-dev-server": "^2.11.1"
   }
 }

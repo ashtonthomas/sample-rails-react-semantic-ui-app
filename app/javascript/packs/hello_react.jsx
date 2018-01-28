@@ -8,6 +8,8 @@ import PropTypes from 'prop-types'
 
 import { Button } from 'semantic-ui-react'
 
+import '../../../dist/semantic.min.css';
+
 const Hello = props => (
   <div>Hello {props.name}!</div>
 )
