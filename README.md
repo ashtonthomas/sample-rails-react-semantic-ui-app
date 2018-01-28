@@ -2,11 +2,14 @@
 
 _Note: all of these steps where committed individual so feel free to look at the individual changesets for more details_ [see commit history](https://github.com/ashtonthomas/sample-rails-react-semantic-ui-app/commits/master)
 
-Rails 5.1 and 5.2 have some new support for webpack and react but I had some trouble getting it all working correctly. I had especially a hard time getting the semantic-ui styling working (where I could edit the themes and recompile). This repo along with the commit log and this README detail my learnings.
+Rails 5.1 and 5.2 have some new support for webpack and react but I had some trouble getting it all working correctly. I had especially a hard time getting the semantic-ui styling working (where I could edit the themes and recompile). This repo along with the commit log and this README detail my learnings. At the end we deploy to heroku (after disabling some Active Storage complications there.)
 
 Resources:
 - https://github.com/rails/webpacker
 - https://react.semantic-ui.com/usage
+
+
+View App on Heroku: https://ails-react-semantic-ui.herokuapp.com/
 
 ## Some setup:
 
@@ -97,9 +100,6 @@ Open: localhost:5000 and see the: Hello React!
 [See Commit](https://github.com/ashtonthomas/sample-rails-react-semantic-ui-app/commit/9a59a644bbe2d7deb315ffacb9ac7cb831683835)
 
 ## Utilize semantic ui component (no css yet)
-
-- https://medium.com/superhighfives/a-top-shelf-web-stack-rails-5-api-activeadmin-create-react-app-de5481b7ec0b
-- https://react.semantic-ui.com/usage
 
 ```
 yarn add semantic-ui-react
@@ -212,3 +212,15 @@ heroku open
 ```
 
 [See Commit for commenting out ERB](https://github.com/ashtonthomas/sample-rails-react-semantic-ui-app/commit/c6ad27927f056e656917a6d4fc2d7a0999c445c6)
+
+## Resources
+
+- https://github.com/rails/webpacker
+- https://github.com/rails/webpacker/blob/master/docs/webpack.md
+- https://react.semantic-ui.com/usage
+- https://www.youtube.com/watch?v=WQue1AN93YU
+- https://www.youtube.com/watch?v=50KHLBaOU18
+- http://samuelmullen.com/articles/embracing-change-rails51-adopts-yarn-webpack-and-the-js-ecosystem/
+- https://github.com/rails/webpacker#paths
+- https://github.com/rails/webpacker/issues/756#issuecomment-327148547
+- https://medium.com/superhighfives/a-top-shelf-web-stack-rails-5-api-activeadmin-create-react-app-de5481b7ec0b
