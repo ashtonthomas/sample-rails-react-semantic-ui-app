@@ -84,7 +84,7 @@
 --------------------*/
 
 /* Hovered */
-@hoverBackgroundColor: #CACBCD;
+@hoverBackgroundColor: #000000;
 @hoverBackgroundImage: @backgroundImage;
 @hoverBoxShadow: @boxShadow;
 @hoverColor: @hoveredTextColor;
