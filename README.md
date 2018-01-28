@@ -1,6 +1,6 @@
 # Rails 5.2 with React/Webpack and the semantic-ui full style package
 
-_Note: all of these steps where committed individual so feel free to look at the individual changesets for more details_
+_Note: all of these steps where committed individual so feel free to look at the individual changesets for more details_ [see commit history](https://github.com/ashtonthomas/sample-rails-react-semantic-ui-app/commits/master)
 
 ## Some setup:
 
@@ -24,6 +24,8 @@ rails new sample-rails-react-semantic-ui-app --webpack=react -d postgresql --ski
 cd sample-rails-react-semantic-ui-app
 ```
 
+[See Commit](https://github.com/ashtonthomas/sample-rails-react-semantic-ui-app/commit/d106ce80b04ca0ea1fe44d091f2b826d933d0789)
+
 ## Setup postgres/db
 
 ```
@@ -33,6 +35,8 @@ bundle exec rails s
 ```
 
 Open: localhost:3000
+
+[See Commit](https://github.com/ashtonthomas/sample-rails-react-semantic-ui-app/commit/654cd422da314046492e13bb13f6da032c531e44)
 
 ## Use foreman:
 
@@ -55,6 +59,8 @@ bundle binstubs bundler --force
 foreman start
 ```
 Open: http://localhost:5000/
+
+[See Commit](https://github.com/ashtonthomas/sample-rails-react-semantic-ui-app/commit/74ee352a6b49e6b925c0cd8888c5a6c7edbf86e6)
 
 ## Add controller with action that renders a react component:
 
@@ -80,7 +86,9 @@ Now fire up the app
 foreman start
 ```
 
-# Open: localhost:5000 and see the: Hello React!
+Open: localhost:5000 and see the: Hello React!
+
+[See Commit](https://github.com/ashtonthomas/sample-rails-react-semantic-ui-app/commit/9a59a644bbe2d7deb315ffacb9ac7cb831683835)
 
 ## Utilize semantic ui component (no css yet)
 
@@ -110,6 +118,8 @@ Open app and see the unstyled button (styling will come soon)
 Open (Chrome) Dev Tools to see console and the click out put
 You will notice errors. We will fix that next
 
+[See Commit](https://github.com/ashtonthomas/sample-rails-react-semantic-ui-app/commit/f388aac3dcbd56c938f006c3a64120d8998e94c2)
+
 ## Get rid of console warnings:
 
 - https://github.com/rails/webpacker/issues/1057
@@ -119,6 +129,8 @@ You will notice errors. We will fix that next
 ```
 p.connect_src :self, :https, 'http://localhost:3035', 'ws://localhost:3035' if Rails.env.development?
 ```
+
+[See Commit](https://github.com/ashtonthomas/sample-rails-react-semantic-ui-app/commit/f3d49ed573ee97b15adf7cf4bbfd9e3462758431)
 
 ## Get semantic-ui package setup and active
 
@@ -162,7 +174,7 @@ _(this wasted a lot of my time)_
 
 Now, reloading the app should apply the semantic-ui styling
 
-
+[See Commit](https://github.com/ashtonthomas/sample-rails-react-semantic-ui-app/commit/cefc7a173ef3c28ea9f180bd31341f51ac018a51)
 
 ## Edit the css
 
@@ -180,6 +192,8 @@ gulp build
 
 Now when you hover, the button goes all black
 Question: How the hell do I change the folder name from 'src/' to anything else?
+
+[See Commit](https://github.com/ashtonthomas/sample-rails-react-semantic-ui-app/commit/2a61831eed2689d15eb3cc5d9dc0df7a51ff0392)
 
 ## Deploy to heroku
 
