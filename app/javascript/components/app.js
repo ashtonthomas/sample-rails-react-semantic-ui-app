@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Grid, Header, Icon } from 'semantic-ui-react'
 import BookListComponent from '../containers/book_list_component'
+import BookDetailContainer from '../containers/book_detail_container'
 
 import '../../../dist/semantic.min.css';
 
@@ -26,6 +27,11 @@ const App = () => (
           <Button onClick={() => console.log("Click!") }>
             The Button Here
           </Button>
+        </Grid.Column>
+      </Grid.Row>
+      <Grid.Row>
+        <Grid.Column>
+          <BookDetailContainer />
         </Grid.Column>
       </Grid.Row>
     </Grid>
