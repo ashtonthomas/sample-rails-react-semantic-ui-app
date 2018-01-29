@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { List, Segment } from 'semantic-ui-react';
 
 // do not export this anymore as we are connecting to state
 class BookListComponent extends Component {
@@ -7,18 +8,28 @@ class BookListComponent extends Component {
   renderList(){
     return this.props.books.map((book) => {
       return (
-        <li key={book.title} className="">
-          {book.title}
-        </li>
+        <List.Item>
+          <List.Content>
+
+            <List.Header>
+              {book.title}
+            </List.Header>
+
+            {book.description}
+
+          </List.Content>
+        </List.Item>
       );
     });
   }
 
   render() {
     return (
-      <ul className="">
-        {this.renderList()}
-      </ul>
+      <Segment inverted>
+        <List divided inverted relaxed>
+          {this.renderList()}
+        </List>
+      </Segment>
     )
   }
 
