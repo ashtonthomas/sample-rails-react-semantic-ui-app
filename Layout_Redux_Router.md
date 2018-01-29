@@ -32,3 +32,6 @@ app/
 ```
 import { Provider } from 'react-redux';
 ```
+
+Application state is just a single, sometimes large javascript object
+A reduce is a function that returns a piece of application state
