@@ -1,10 +1,18 @@
-/* eslint no-console:0 */
-// This file is automatically compiled by Webpack, along with any other files
-// present in this directory. You're encouraged to place your actual application logic in
-// a relevant structure within app/javascript and only use these pack files to reference
-// that code so it'll be compiled.
-//
-// To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
-// layout file, like app/views/layouts/application.html.erb
+console.log('loading packs/application.js via webpacker');
 
-console.log('Hello World from Webpacker')
+import React from 'react'
+import { render } from 'react-dom'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import App from '../components/app'
+// import reducer from '../reducers'
+
+// const store = createStore(reducer)
+
+render(
+  // <Provider store={store}>
+    <App />
+  // </Provider>
+  ,
+  document.getElementById('root')
+)
