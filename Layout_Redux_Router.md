@@ -35,3 +35,34 @@ import { Provider } from 'react-redux';
 
 Application state is just a single, sometimes large javascript object
 A reduce is a function that returns a piece of application state
+
+## React Router
+
+```
+yarn add react-router-dom@4.2.2
+...
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
+...
+return (
+  <Router>
+
+  </Router>
+)
+...
+<Link to={'/path/${someId}'}>
+...
+<Route exact={true} path="/" render={() => (
+    <h1>Welcome</h1>
+)} />
+
+<Route path="/path/:someId" component={SomeComponent} />
+...
+
+const Gist = ({ match }) => (
+    <div>
+      {match.params.someId}
+    </div>
+)
+
+
+```
